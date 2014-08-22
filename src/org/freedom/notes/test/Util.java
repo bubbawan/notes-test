@@ -8,7 +8,7 @@ public class Util {
 		for (int i = 0; i < n; i++) {
 			NotesManagerSingleton.instance().addNote(
 					new Note(String.valueOf(i) + "-title", String.valueOf(i)
-							+ "-note"));
+							+ "-note", Note.getDateTime()));
 		}
 	}
 }
